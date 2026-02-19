@@ -15,12 +15,12 @@
 
 
 .button.primary {
-  background-color: #007bff;
+  background-color: #28a745;
   color: white;
 }
 
 .button.primary:hover:not(:disabled) {
-  background-color: #0056b3;
+  background-color: #218838;
   transform: translateY(-1px);
 }
 
@@ -85,7 +85,7 @@
 }
 
 .header {
-  background-color: #007bff;
+  background-color: #28a745;
   color: white;
   padding: 1rem 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -171,7 +171,7 @@
 }
 
 .course-card:hover {
-  border-left: 4px solid #007bff;
+  border-left: 4px solid #28a745;
 }
 
 .course-title {
@@ -190,7 +190,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  color: #007bff;
+  color: #28a745;
   font-size: 0.9rem;
   font-weight: 500;
 }
@@ -222,7 +222,7 @@
 
 .lesson-item:hover {
   background: #f8f9fa;
-  border-color: #007bff;
+  border-color: #28a745;
   transform: translateX(4px);
 }
 
@@ -278,7 +278,7 @@
 .comment {
   padding: 16px;
   background: #f8f9fa;
-  border-left: 3px solid #007bff;
+  border-left: 3px solid #28a745;
   border-radius: 6px;
 }
 
@@ -312,8 +312,8 @@
 
 .comment-form textarea:focus {
   outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+  border-color: #28a745;
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.1);
 }
 
 .comment-form textarea::placeholder {
