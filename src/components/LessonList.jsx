@@ -11,10 +11,12 @@ const LessonList = ({lessons, completedLessonsIds, onLessonClick}) => {
                         <span className="checkmark">✅</span>
                     )}
 
-                    <span className="lesson-order">{lesson-order}</span>
+                    <span className="lesson-order">{lesson.order}</span>
                     <span className="lesson-title">{lesson.title}</span>
                 </div>
             ))}
         </div>
     );
 };
+
+export default LessonList;

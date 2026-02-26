@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 
 const DiscussionThread = ({lessonId, discussions, onAddComment}) => {
     const [commentText, setCommentText] = useState('');
@@ -8,7 +9,7 @@ const DiscussionThread = ({lessonId, discussions, onAddComment}) => {
 
         const trimmed = commentText.trim();
 
-        if(trimmed.lenngth === 0){
+        if(trimmed.length === 0){
             return;
         }
 
@@ -50,7 +51,7 @@ const DiscussionThread = ({lessonId, discussions, onAddComment}) => {
                 <button
                     type="submit"
                     variant="primary"
-                    disabled={isSubmitting || commentText.trim().lenght ===0}
+                    disabled={isSubmitting || commentText.trim().length === 0}
                 >
                     {isSubmitting ? 'posting...' : 'Post Comment'}
                 </button>
@@ -58,3 +59,5 @@ const DiscussionThread = ({lessonId, discussions, onAddComment}) => {
         </div>
     );
 };
+
+export default DiscussionThread;

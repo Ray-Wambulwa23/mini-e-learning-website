@@ -4,6 +4,7 @@ import Layout from './components/common/layout';
 import CoursesPage from './pages/CoursesPage';
 import CourseDetailPage from './pages/CourseDetailPage';
 import LessonPage from './pages/LessonPage';
+
 import './App.css';
 
 function App() {

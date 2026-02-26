@@ -1,19 +1,24 @@
 import React from "react";
+import { Link, useLocation } from 'react-router-dom';
 import './index.css';
 
-const Layout = ({ children, title }) => {
+const Layout = ({ children }) => {
+    const location = useLocation();
+    
     return (
         <div className="layout">
             <header className="header">
                 <div className="header-content">
-                    <h1 className="app-title">Student E-learning Portal</h1>
-                    {title && <h2 className="page-title">{title}</h2>}
+                    <Link to="/" className="app-title-link">
+                        <h1 className="app-title">Student E-learning Portal</h1>
+                    </Link>
+                    <nav className="header-nav">
+                        <Link to="/" className={location.pathname === '/' ? 'nav-link active' : 'nav-link'}>
+                            Courses
+                        </Link>
+                    </nav>
                 </div>
             </header>
-
-            <nav className="breadcrumbs">
-                {/* will add later*/}
-            </nav>
 
             <main className="main-content">
                 <div className="container">

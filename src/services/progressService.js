@@ -27,7 +27,7 @@ export const getCompletedLessons = () => {
     return completedLessons;
 };
 
-export const isLessonCompleted = (lessonId) => {
+export const isLessonComplete = (lessonId) => {
     return completedLessons.has(lessonId);
 };
 
