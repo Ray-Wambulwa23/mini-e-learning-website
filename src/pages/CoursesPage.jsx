@@ -17,7 +17,7 @@ const CoursesPage = () => {
   };
 
   return (
-    <div className='courses-page'>
+    <div className='courses-page fade-in'>
       <h1>Available courses</h1>
       <div className='courses-grid'>
         {courses.map((course) => (

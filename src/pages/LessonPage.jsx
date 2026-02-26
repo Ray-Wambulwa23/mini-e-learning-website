@@ -34,10 +34,15 @@ const LessonPage = () => {
   };
 
   if(!lesson){
-    return <div>Loading...</div>
+    return (
+      <div className='loading-container'>
+        <div className='loading-spinner'></div>
+        <p className='loading-text'>Loading lesson...</p>
+      </div>
+    );
   }
   return (
-    <div className='lesson-page'>
+    <div className='lesson-page fade-in'>
       <Button variant="secondary" onClick= {() => navigate(`/courses/${courseId}`)}>
         Back to course
       </Button>

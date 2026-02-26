@@ -25,11 +25,16 @@ const CourseDetailPage = () => {
   };
 
   if (!detail) {
-  return <div>Loading...</div>;    
+    return (
+      <div className='loading-container'>
+        <div className='loading-spinner'></div>
+        <p className='loading-text'>Loading course...</p>
+      </div>
+    );
   }
 
   return (
-    <div className='course-Detail-page'>
+    <div className='course-detail-page fade-in'>
       <Button variant="secondary" onClick={() => navigate('/')}>
         Back to courses
         </Button>
